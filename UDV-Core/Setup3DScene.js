@@ -99,7 +99,7 @@ $3dTilesLayer.name = 'RequestVolume';
 $3dTilesLayer.url = buildingServerRequest;
 
 $3dTilesLayer.protocol = '3d-tiles'
-$3dTilesLayer.overrideMaterials = false;  // custom cesium shaders are not functional
+$3dTilesLayer.overrideMaterials = true;  // custom cesium shaders are not functional
 $3dTilesLayer.type = 'geometry';
 $3dTilesLayer.visible = true;
 

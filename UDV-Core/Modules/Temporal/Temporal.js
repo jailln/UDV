@@ -6,6 +6,10 @@
 * These are used to change the version of a 3d object according to the date
 */
 
+// FIXME: Change date creation: "parsing of date strings with the Date constructor
+// (and Date.parse, they are equivalent) is strongly discouraged due to browser differences and inconsistencies."
+// (see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+
 // we use the THREE.js library provided by itowns
 THREE = itowns.THREE;
 
@@ -64,10 +68,12 @@ function TemporalController(view, options={}) {
     this.currentVersionIndex = -1;
     this.lastVersionIndex = -2;
 
-    // min and max date for the temporal slider
-    // (should be in options ? or set up by guided tour ?)
-    this.minDate = new Date( "1700-01-01" );
-    this.maxDate = new Date( "2018-01-01" );
+    // min and max date for the temporal slider. Currently, default values correspond
+    // to the one of Vilo3D demo
+    // FIXME: Modify default dates to e.g. today -> 2100 and add them as option in
+    // Vilo3D example
+    this.minDate = new Date(options.minDate) || new Date( "1700-01-01" );
+    this.maxDate = new Date(options.maxDate) || new Date( "2018-01-01" );
 
     // is the controller enabled
     this.enabled = false;
