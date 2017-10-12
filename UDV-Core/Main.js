@@ -74,12 +74,12 @@ var controls = new itowns.PlanarControls(view, (useControlsForEditing)? optionsE
 
 // instanciate temporal controller
 var options = {
-    minDate: '1700-01-01',
-    maxDate: '2049-12-31',
+    startDate: new Date(1700,1,1),
+    endDate: new Date(2049,12,31),
 }
 var temporal = new TemporalController(view, options);
 
-var temporal = new TemporalController(view,{buildingVersions: idlBuildings, buildingDates: idlDates, dateDisplayLength : 4});
+// var temporal = new TemporalController(view,{buildingVersions: idlBuildings, buildingDates: idlDates, dateDisplayLength : 4});
 
 // instanciate document handler
 // var documents = new DocumentsHandler(view,controls,'docs.csv',{temporal: temporal});

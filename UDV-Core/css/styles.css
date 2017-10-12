@@ -925,7 +925,7 @@ body {
 
 
 #timeSlider {
-    width: 80%;
+    width: 68%;
 
     position: absolute;
     z-index: 10;
@@ -985,7 +985,7 @@ body {
     pointer-events: auto;
 
 }
-
+/*
 #timeNextButton{
 
     position: absolute;
@@ -1031,8 +1031,8 @@ body {
     pointer-events: auto;
 
 }
-
-#timeConcurrentView{
+*/
+/* #timeConcurrentView{
 
     position: absolute;
     z-index: 20;
@@ -1051,7 +1051,7 @@ body {
     pointer-events: auto;
 
 
-}
+} */
 
 #compassWindow {
     position: absolute;

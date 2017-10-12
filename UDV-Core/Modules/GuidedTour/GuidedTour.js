@@ -186,7 +186,7 @@ function GuidedTourController(docHandler, dataFile, options={}) {
                 this.temporal.toggleTemporalWindow();
             }
             // hide concurrent view button
-            document.getElementById("timeConcurrentView").style.display = "none";
+            // document.getElementById("timeConcurrentView").style.display = "none";
         }
 
         // open doc window and hide some buttons
@@ -211,10 +211,10 @@ function GuidedTourController(docHandler, dataFile, options={}) {
         this.docs.showBillboards(false);
         this.docs.closeDocFull();
 
-        if(this.temporal){
+        /* if(this.temporal){
             // show concurrent view button
             document.getElementById("timeConcurrentView").style.display = "block";
-        }
+        } */
 
         // show the regular buttons for doc window
         document.getElementById('docBrowserPreviousButton').style.display = "block";
