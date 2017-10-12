@@ -26,7 +26,7 @@ Just (git) clone UDV and iTowns alongside (the two directories must be siblings)
   git clone https://github.com/MEPP-team/UDV.git
   git clone https://github.com/itowns/itowns.git
   cd itowns/
-  npm install   # Might require some "sudo apt-get install npm"
+  npm install     # Might require some "sudo apt-get install npm"
 ```
 
 Since Vilo3d demo uses ColladaLoader to import handmade buildings, add the following line at the start of `itowns/node_modules/three/examples/js/loaders/ColladaLoader2.js`:
