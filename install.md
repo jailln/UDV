@@ -19,7 +19,7 @@ TO DO : auto install (install all dependencies with npm)
 ## Light install (without building geometry provide by DB)
 ```
   git clone https://github.com/MEPP-team/UDV.git
-  cd UDV
+  cd UDV/UDV-Core
   npm install
   npm start
 ```
